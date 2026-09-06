@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Chapter, { FadeUp } from "./Chapter";
 import { PROJECTS } from "./data";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Globe } from "lucide-react";
 
 export default function Projects() {
     return (
@@ -9,7 +9,10 @@ export default function Projects() {
             <div className="space-y-20" data-testid="projects-list">
                 {PROJECTS.map((p, i) => (
                     <FadeUp key={p.title} delay={0.05 * i}>
-                        <article
+                        <a
+                            href={p.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="group grid grid-cols-1 gap-8 lg:grid-cols-12"
                             data-testid={`project-card-${i}`}
                         >
@@ -24,6 +27,12 @@ export default function Projects() {
                                     transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
                                     className="absolute inset-0 h-full w-full object-cover grayscale transition-[filter,transform] duration-700 group-hover:scale-105 group-hover:grayscale-0"
                                 />
+                                {p.href && (
+                                    <span className="font-jbmono absolute left-4 top-4 flex items-center gap-1.5 rounded-full border border-white/15 bg-black/50 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-neutral-200 backdrop-blur-md">
+                                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_2px_rgba(52,211,153,0.6)]" />
+                                        Live
+                                    </span>
+                                )}
                             </div>
                             <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.02] p-8 backdrop-blur-md transition-colors duration-500 group-hover:border-silver/30 lg:col-span-5">
                                 <div>
@@ -31,10 +40,10 @@ export default function Projects() {
                                         <span className="font-jbmono rounded-full border border-silver/25 bg-silver/5 px-3 py-1 text-[11px] tracking-[0.25em] text-silver">
                                             {p.year}
                                         </span>
-                                        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition-colors duration-300 group-hover:border-silver/40">
+                                        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition-colors duration-300 group-hover:border-silver/40 group-hover:bg-silver/10">
                                             <ArrowUpRight
                                                 size={18}
-                                                className="text-neutral-500 transition-colors duration-300 group-hover:text-silver-light"
+                                                className="text-neutral-500 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-silver-light"
                                             />
                                         </span>
                                     </div>
@@ -45,7 +54,7 @@ export default function Projects() {
                                         {p.desc}
                                     </p>
                                 </div>
-                                <div className="mt-6 flex flex-wrap gap-2">
+                                <div className="mt-6 flex flex-wrap items-center gap-2">
                                     {p.tags.map((t) => (
                                         <span
                                             key={t}
@@ -54,9 +63,15 @@ export default function Projects() {
                                             {t}
                                         </span>
                                     ))}
+                                    {p.href && (
+                                        <span className="font-jbmono ml-auto flex items-center gap-1 text-[10px] uppercase tracking-[0.2em] text-silver/70 transition-colors duration-300 group-hover:text-silver-light">
+                                            <Globe size={12} />
+                                            {p.href.replace(/^https?:\/\//, "")}
+                                        </span>
+                                    )}
                                 </div>
                             </div>
-                        </article>
+                        </a>
                     </FadeUp>
                 ))}
             </div>
