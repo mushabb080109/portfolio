@@ -28,7 +28,7 @@ export default function Chapter({ id, number, title, children }) {
                             <span className="font-jbmono inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-[11px] tracking-[0.3em] text-neutral-500">
                                 {number}
                             </span>
-                            <h2 className="font-display mt-6 text-3xl font-semibold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+                            <h2 className="font-display mt-6 text-2xl font-medium leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
                                 {title}
                             </h2>
                             <div className="mt-6 h-px w-16 bg-white/15" />

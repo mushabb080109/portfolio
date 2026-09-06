@@ -33,7 +33,7 @@ export default function Contact() {
                     <span className="font-jbmono inline-flex items-center rounded-full border border-white/15 px-4 py-1.5 text-[11px] uppercase tracking-[0.35em] text-neutral-500">
                         09 — Contact
                     </span>
-                    <h2 className="font-display mt-8 text-[13vw] font-bold uppercase leading-[0.9] tracking-tighter text-white sm:text-[9vw]">
+                    <h2 className="font-display mt-8 text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                         Let&apos;s Talk
                     </h2>
                     <p className="mt-8 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">

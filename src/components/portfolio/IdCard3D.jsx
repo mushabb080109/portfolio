@@ -185,7 +185,6 @@ export default function IdCard3D() {
                     </ErrorCatcher>
                 </Suspense>
             </div>
-            <p className="idcard3d-hint">Tarik &amp; lempar kartunya ✋</p>
         </div>
     );
 }

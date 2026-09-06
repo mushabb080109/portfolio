@@ -47,7 +47,7 @@ export default function Projects() {
                                             />
                                         </span>
                                     </div>
-                                    <h3 className="font-display mt-5 text-3xl font-semibold uppercase tracking-tight text-white sm:text-4xl">
+                                    <h3 className="font-display mt-5 text-xl font-medium tracking-tight text-white sm:text-2xl">
                                         {p.title}
                                     </h3>
                                     <p className="mt-4 text-base leading-relaxed text-neutral-400">

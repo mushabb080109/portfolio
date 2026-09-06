@@ -21,7 +21,7 @@ export default function Organizations() {
                                     {o.period}
                                 </span>
                             </div>
-                            <h3 className="font-display mt-8 text-xl font-semibold uppercase tracking-tight text-white sm:text-2xl">
+                            <h3 className="font-display mt-8 text-lg font-medium tracking-tight text-white sm:text-xl">
                                 {o.org}
                             </h3>
                             <p className="mt-3">

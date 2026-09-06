@@ -27,7 +27,7 @@ export default function Hobbies() {
                                 <span className="font-jbmono inline-block rounded-full border border-silver/30 bg-black/50 px-3 py-1 text-[10px] tracking-[0.3em] text-silver backdrop-blur-md">
                                     0{i + 1}
                                 </span>
-                                <h3 className="font-display mt-3 text-2xl font-semibold uppercase tracking-tight text-white">
+                                <h3 className="font-display mt-3 text-lg font-medium tracking-tight text-white">
                                     {h.title}
                                 </h3>
                                 <p className="mt-1 text-sm text-neutral-400">{h.sub}</p>

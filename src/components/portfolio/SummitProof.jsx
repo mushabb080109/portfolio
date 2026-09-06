@@ -16,7 +16,7 @@ export default function SummitProof() {
                             <MapPin size={12} />
                             Bukti Puncak
                         </span>
-                        <h3 className="font-display text-metallic mt-4 text-2xl font-semibold uppercase tracking-tight sm:text-3xl">
+                        <h3 className="font-display text-metallic mt-4 text-xl font-medium tracking-tight sm:text-2xl">
                             Papan Nama, Saksi Perjalanan
                         </h3>
                     </div>
@@ -45,7 +45,7 @@ export default function SummitProof() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
                             <div className="absolute inset-x-0 bottom-0 p-5">
-                                <h4 className="font-display text-xl font-semibold uppercase tracking-tight text-white">
+                                <h4 className="font-display text-lg font-medium tracking-tight text-white">
                                     {s.name}
                                 </h4>
                                 <p className="font-jbmono mt-1 text-[10px] uppercase tracking-[0.2em] text-neutral-300">

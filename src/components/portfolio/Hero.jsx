@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import SocialIcons from "./SocialIcons";
 import IdCard3D from "./IdCard3D";
 
@@ -42,12 +42,12 @@ export default function Hero() {
                         </span>
                     </MaskedLine>
 
-                    <h1 className="font-display mt-8 font-bold uppercase leading-[0.9] tracking-tighter">
-                        <MaskedLine delay={0.35} className="text-[15vw] sm:text-[12vw] lg:text-[6.2vw]">
-                            <span className="text-metallic">Portfolio</span>
+                    <h1 className="font-display mt-8 font-semibold leading-[1.05] tracking-tight">
+                        <MaskedLine delay={0.35} className="text-4xl sm:text-5xl lg:text-6xl">
+                            <span className="text-metallic">Mushab Adibaa</span>
                         </MaskedLine>
-                        <MaskedLine delay={0.5} className="text-[7vw] sm:text-[5vw] lg:text-[2.6vw]">
-                            <span className="text-ghost-accent">Mushab Adibaa</span>
+                        <MaskedLine delay={0.5} className="mt-2 text-2xl font-normal sm:text-3xl lg:text-4xl">
+                            <span className="text-neutral-400">Portfolio</span>
                             <span className="text-silver"> — Uca</span>
                         </MaskedLine>
                     </h1>
@@ -75,21 +75,9 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 1.1, ease: EASE }}
-                className="relative z-10 mt-10 flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between"
+                className="relative z-10 mt-10 flex justify-end"
                 data-testid="hero-contact-card"
             >
-                <div className="flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-neutral-500 backdrop-blur-md w-fit">
-                    <motion.span
-                        animate={{ y: [0, 6, 0] }}
-                        transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-                    >
-                        <ArrowDown size={16} className="text-silver" />
-                    </motion.span>
-                    <span className="font-jbmono text-[10px] uppercase tracking-[0.3em]">
-                        Scroll untuk menjelajah
-                    </span>
-                </div>
-
                 <SocialIcons />
             </motion.div>
         </section>

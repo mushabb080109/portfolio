@@ -32,8 +32,8 @@ export default function Skills() {
                                 </span>
                             </div>
                             <h3
-                                className={`font-display mt-8 font-semibold uppercase tracking-tight text-white ${
-                                    s.size === "large" ? "text-4xl sm:text-5xl" : "text-2xl"
+                                className={`font-display mt-8 font-medium tracking-tight text-white ${
+                                    s.size === "large" ? "text-2xl sm:text-3xl" : "text-xl"
                                 }`}
                             >
                                 {s.title}
