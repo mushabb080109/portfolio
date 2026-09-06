@@ -1,8 +1,15 @@
+.idcard3d-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .idcard3d-wrapper {
     position: relative;
     width: 100%;
-    height: 380px;
-    max-width: 380px;
+    height: 360px;
+    max-width: 340px;
     margin: 0 auto;
     touch-action: none;
 }
@@ -13,10 +20,7 @@
 }
 
 .idcard3d-hint {
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-    right: 0;
+    margin-top: 14px;
     text-align: center;
     font-size: 11px;
     letter-spacing: 0.25em;
@@ -24,6 +28,20 @@
     color: rgba(255, 255, 255, 0.35);
     pointer-events: none;
     font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@media (min-width: 1024px) {
+    .idcard3d-wrapper {
+        height: 480px;
+        max-width: 440px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .idcard3d-wrapper {
+        height: 540px;
+        max-width: 480px;
+    }
 }
 
 .idcard3d-loader {
@@ -54,7 +72,7 @@
 
 @media (max-width: 640px) {
     .idcard3d-wrapper {
-        height: 320px;
-        max-width: 300px;
+        height: 300px;
+        max-width: 280px;
     }
 }

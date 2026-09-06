@@ -26,24 +26,15 @@ export default function Contact() {
         <footer
             id="contact"
             data-testid="contact-footer"
-            className="relative overflow-hidden px-6 pb-12 pt-32 sm:px-12 lg:px-24 lg:pt-48"
+            className="relative px-6 pb-12 pt-28 sm:px-12 lg:px-24 lg:pt-36"
         >
-            <div className="ambient-glow pointer-events-none absolute inset-0" aria-hidden />
-            <span
-                aria-hidden
-                className="text-ghost font-display pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 select-none text-[26vw] font-bold leading-none tracking-tighter"
-            >
-                UCA
-            </span>
-
             <div className="relative z-10">
                 <FadeUp>
-                    <span className="font-jbmono inline-flex items-center rounded-full border border-silver/25 bg-silver/5 px-4 py-1.5 text-[11px] uppercase tracking-[0.35em] text-silver">
+                    <span className="font-jbmono inline-flex items-center rounded-full border border-white/15 px-4 py-1.5 text-[11px] uppercase tracking-[0.35em] text-neutral-500">
                         09 — Contact
                     </span>
-                    <h2 className="font-display mt-8 text-[13vw] font-bold uppercase leading-[0.9] tracking-tighter sm:text-[9vw]">
-                        <span className="text-metallic">Let&apos;s</span>{" "}
-                        <span className="text-ghost-accent">Talk</span>
+                    <h2 className="font-display mt-8 text-[13vw] font-bold uppercase leading-[0.9] tracking-tighter text-white sm:text-[9vw]">
+                        Let&apos;s Talk
                     </h2>
                     <p className="mt-8 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
                         Mau ngobrol soal kode, gunung, musik, atau kolaborasi karya?

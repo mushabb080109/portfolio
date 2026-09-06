@@ -4,7 +4,7 @@ import { Trophy } from "lucide-react";
 
 export default function Achievements() {
     return (
-        <Chapter id="achievements" number="05" title="Awards" ghostWord="WIN">
+        <Chapter id="achievements" number="05" title="Awards">
             <div className="space-y-4" data-testid="achievements-list">
                 {ACHIEVEMENTS.map((a, i) => (
                     <FadeUp key={a.title} delay={0.07 * i}>

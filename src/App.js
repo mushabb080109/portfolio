@@ -3,7 +3,6 @@ import Lenis from "lenis";
 import "@/App.css";
 import Nav from "@/components/portfolio/Nav";
 import Hero from "@/components/portfolio/Hero";
-import MarqueeStrip from "@/components/portfolio/MarqueeStrip";
 import About from "@/components/portfolio/About";
 import Education from "@/components/portfolio/Education";
 import Skills from "@/components/portfolio/Skills";
@@ -14,9 +13,6 @@ import Hobbies from "@/components/portfolio/Hobbies";
 import SummitProof from "@/components/portfolio/SummitProof";
 import Gallery from "@/components/portfolio/Gallery";
 import Contact from "@/components/portfolio/Contact";
-
-const MARQUEE_TOP = ["Student", "Developer", "Designer", "Explorer", "Musician", "Hiker"];
-const MARQUEE_BOTTOM = ["Mushab Adibaa", "Uca", "SMAN 1 Cikarang Timur", "Class of 2026"];
 
 function App() {
     useEffect(() => {
@@ -37,11 +33,9 @@ function App() {
 
     return (
         <div className="App bg-[#050505] text-white">
-            <div className="noise-overlay" aria-hidden />
             <Nav />
             <main>
                 <Hero />
-                <MarqueeStrip items={MARQUEE_TOP} />
                 <About />
                 <Education />
                 <Skills />
@@ -51,7 +45,6 @@ function App() {
                 <Hobbies />
                 <SummitProof />
                 <Gallery />
-                <MarqueeStrip items={MARQUEE_BOTTOM} accent />
                 <Contact />
             </main>
         </div>

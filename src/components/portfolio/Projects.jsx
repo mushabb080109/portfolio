@@ -5,7 +5,7 @@ import { ArrowUpRight, Globe } from "lucide-react";
 
 export default function Projects() {
     return (
-        <Chapter id="projects" number="04" title="Projects" ghostWord="WORK">
+        <Chapter id="projects" number="04" title="Projects">
             <div className="space-y-20" data-testid="projects-list">
                 {PROJECTS.map((p, i) => (
                     <FadeUp key={p.title} delay={0.05 * i}>

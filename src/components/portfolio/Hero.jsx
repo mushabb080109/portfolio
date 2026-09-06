@@ -25,25 +25,15 @@ export default function Hero() {
         target: ref,
         offset: ["start start", "end start"],
     });
-    const ghostY = useTransform(scrollYProgress, [0, 1], [0, 260]);
     const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
     return (
         <section
             ref={ref}
             data-testid="hero-section"
-            className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 sm:px-12 lg:px-24"
+            className="relative flex min-h-screen flex-col justify-center px-6 sm:px-12 lg:px-24"
         >
-            <div className="ambient-glow pointer-events-none absolute inset-0" aria-hidden />
-            <motion.span
-                aria-hidden
-                style={{ y: ghostY }}
-                className="text-ghost font-display pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center text-[34vw] font-bold leading-none tracking-tighter"
-            >
-                2026
-            </motion.span>
-
-            <div className="relative z-10 grid gap-2 pt-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-6">
+            <div className="relative z-10 grid gap-8 pt-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10">
                 <motion.div style={{ opacity: fade }} className="lg:order-1">
                     <MaskedLine delay={0.2}>
                         <span className="font-jbmono inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-xs uppercase tracking-[0.35em] text-neutral-400 backdrop-blur-md sm:text-sm">

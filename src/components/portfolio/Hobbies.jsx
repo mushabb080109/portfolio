@@ -4,7 +4,7 @@ import { HOBBIES } from "./data";
 
 export default function Hobbies() {
     return (
-        <Chapter id="hobbies" number="07" title="Hobbies" ghostWord="PLAY">
+        <Chapter id="hobbies" number="07" title="Hobbies">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" data-testid="hobbies-grid">
                 {HOBBIES.map((h, i) => (
                     <FadeUp key={h.key} delay={0.08 * i}>

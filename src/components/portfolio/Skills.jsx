@@ -13,7 +13,7 @@ const SIZE_CLASS = {
 
 export default function Skills() {
     return (
-        <Chapter id="skills" number="03" title="Skills" ghostWord="SKILL">
+        <Chapter id="skills" number="03" title="Skills">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3" data-testid="skills-bento">
                 {SKILLS.map((s, i) => {
                     const Icon = ICONS[s.icon];
@@ -21,9 +21,8 @@ export default function Skills() {
                         <FadeUp
                             key={s.id}
                             delay={0.08 * i}
-                            className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-colors duration-500 hover:border-silver/35 ${SIZE_CLASS[s.size]}`}
+                            className={`group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-colors duration-300 hover:border-white/25 ${SIZE_CLASS[s.size]}`}
                         >
-                            <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-silver/0 blur-3xl transition-colors duration-700 group-hover:bg-silver/10" />
                             <div className="flex items-start justify-between">
                                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05]">
                                     <Icon size={s.size === "large" ? 26 : 22} className="text-silver" />

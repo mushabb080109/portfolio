@@ -177,12 +177,14 @@ export default function IdCard3D() {
     if (failed) return null;
 
     return (
-        <div className="idcard3d-wrapper" data-testid="idcard-3d">
-            <Suspense fallback={<Loader />}>
-                <ErrorCatcher onError={() => setFailed(true)}>
-                    <Scene />
-                </ErrorCatcher>
-            </Suspense>
+        <div className="idcard3d-outer">
+            <div className="idcard3d-wrapper" data-testid="idcard-3d">
+                <Suspense fallback={<Loader />}>
+                    <ErrorCatcher onError={() => setFailed(true)}>
+                        <Scene />
+                    </ErrorCatcher>
+                </Suspense>
+            </div>
             <p className="idcard3d-hint">Tarik &amp; lempar kartunya ✋</p>
         </div>
     );

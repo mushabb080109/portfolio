@@ -4,7 +4,7 @@ import { GraduationCap } from "lucide-react";
 
 export default function Education() {
     return (
-        <Chapter id="education" number="02" title="Education" ghostWord="SMA">
+        <Chapter id="education" number="02" title="Education">
             <div className="space-y-4" data-testid="education-timeline">
                 {EDUCATION.map((e, i) => (
                     <FadeUp key={e.school} delay={0.1 * i}>

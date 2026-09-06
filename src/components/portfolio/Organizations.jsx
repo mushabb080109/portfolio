@@ -4,7 +4,7 @@ import { Users } from "lucide-react";
 
 export default function Organizations() {
     return (
-        <Chapter id="organizations" number="06" title="Organizations" ghostWord="TEAM">
+        <Chapter id="organizations" number="06" title="Organizations">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-3" data-testid="organizations-grid">
                 {ORGANIZATIONS.map((o, i) => (
                     <FadeUp

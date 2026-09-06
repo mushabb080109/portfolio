@@ -10,7 +10,7 @@ const STATS = [
 
 export default function About() {
     return (
-        <Chapter id="about" number="01" title="About" ghostWord="UCA">
+        <Chapter id="about" number="01" title="About">
             <FadeUp>
                 <p className="max-w-2xl text-lg leading-relaxed text-neutral-300 sm:text-xl">
                     Halo! Gue <span className="text-silver-light font-medium">Mushab Adibaa</span> —

@@ -4,7 +4,7 @@ import { GALLERY } from "./data";
 
 export default function Gallery() {
     return (
-        <Chapter id="gallery" number="08" title="Memories" ghostWord="PICS">
+        <Chapter id="gallery" number="08" title="Memories">
             <FadeUp>
                 <p className="mb-12 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
                     Bukti dan kenangan — dari puncak gunung sampai layar monitor.
