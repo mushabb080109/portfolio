@@ -43,8 +43,8 @@ export default function Hero() {
                 2026
             </motion.span>
 
-            <div className="relative z-10 grid gap-10 pt-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-6">
-                <motion.div style={{ opacity: fade }}>
+            <div className="relative z-10 grid gap-2 pt-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-6">
+                <motion.div style={{ opacity: fade }} className="lg:order-1">
                     <MaskedLine delay={0.2}>
                         <span className="font-jbmono inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-xs uppercase tracking-[0.35em] text-neutral-400 backdrop-blur-md sm:text-sm">
                             <MapPin size={14} className="text-silver" />
@@ -75,7 +75,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.6, ease: EASE }}
-                    className="relative"
+                    className="relative order-first lg:order-2"
                 >
                     <IdCard3D />
                 </motion.div>
@@ -85,7 +85,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 1.1, ease: EASE }}
-                className="relative z-10 mt-16 flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between"
+                className="relative z-10 mt-10 flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between"
                 data-testid="hero-contact-card"
             >
                 <div className="flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-neutral-500 backdrop-blur-md w-fit">
